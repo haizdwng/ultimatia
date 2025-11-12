@@ -13,8 +13,6 @@ export async function POST(req) {
     orderCode: orderId,
     amount: amount,
     description: `Thanh toan don hang ${orderId}`,
-    returnUrl: "https://yourdomain.com/success",
-    cancelUrl: "https://yourdomain.com/cancel",
   };
 
   // Ký checksum
