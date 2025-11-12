@@ -10,7 +10,7 @@ export default function Page() {
     const res = await fetch("/api/payment", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ amount: 100000, orderId: Date.now() }),
+      body: JSON.stringify({ amount: 100000, orderId: '23B426B' }),
     });
     const data = await res.json();
     setQr(data.data.qrCode);
